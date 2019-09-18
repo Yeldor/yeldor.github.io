@@ -24,3 +24,7 @@ body {
     background-size: 100%;
     background-color: black;
 }
+
+html {
+    background: none;
+}
