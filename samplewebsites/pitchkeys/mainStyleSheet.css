@@ -1,0 +1,35 @@
+@font-face {
+    font-family: aquawaxMedium;
+    src: url(Aquawax\ Medium\ Trial.ttf);
+  }
+
+* {
+    font-family: aquawaxMedium;
+    
+}
+html {
+    background-image: linear-gradient(rgb(255, 180, 36), rgb(255, 140, 18));
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+body h1 {
+    text-align: center;
+}
+
+/*#homeButtons {
+    text-align: center;
+}*/
+
+#homeButtons a button{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#homeButtons button {
+    background-color: rgb(255, 140, 18);
+}
+
+h1 a {
+    text-decoration: none;
+}
