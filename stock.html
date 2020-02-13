@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <div>
+
+    </div>
+    <script>
+        $.get('https://www.marketwatch.com/investing/stock/amd').then(function (html) {
+            // Success response
+            var $mainbar = $(html).find('.intraday__price');
+            document.write($mainbar.html());
+        }, function () {
+            // Error response
+            document.write('Access denied');
+        });
+    </script>
+</body>
+
+</html>
