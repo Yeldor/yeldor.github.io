@@ -2,14 +2,14 @@
 <html>
 
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-</head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script></head>
 
 <body>
     <div>
 
     </div>
     <script>
+        /*
         $.get('https://www.marketwatch.com/investing/stock/amd').then(function (html) {
             // Success response
             var $mainbar = $(html).find('.intraday__price');
@@ -17,6 +17,9 @@
         }, function () {
             // Error response
             document.write('Access denied');
+        });*/
+        $.getJSON("https://www.marketwatch.com/investing/stock/amd", function (data) {
+            alert(data.query.results.json.json[0].v);
         });
     </script>
 </body>
